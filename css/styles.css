@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+
+
+
+:root {
+    font-size: 10px;
+    background-color: #a59bfd;
+}
+@keyframes main {
+    50% {background-color: #b58ad8;}
+    50% {background-color: #7c3bb0;}
+}
+
+.nav{
+    height: 6rem;
+    width: 100%;
+    background-color: #ff44a8;
+    background-image: linear-gradient(#ff44a8, #ffb7d7);
+}
+
+body{
+    background-color: #a59bfd;
+    animation-name: main;
+    animation-duration: 8s;
+    height: 100vh;
+}
+.message{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    font-size: 6rem;
+    font-family: 'Gluten', cursive;
+    
+}
+
+.footer{
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ff44a8;
+    background-image: linear-gradient(#ffb7d7, #ff44a8);
+}
