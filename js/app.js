@@ -12,3 +12,22 @@ const typer = (text) => {
 
 }
 typer('Happy Birthday Ellie!')
+
+const yearArr = [
+    './assets/ellie-four-weeks.jpg',
+    './assets/ellie-six-months.jpg',
+    './assets/ellie-one-2014.jpg',
+    './assets/ellie-two-2015.jpg',
+    './assets/ellie-three-2017.jpg',
+    './assets/ellie-four-2017.jpg',
+    './assets/ellie-five-2018.jpg',
+    './assets/ellie-six-2020.jpg',
+    './assets/ellie-seven-2021.jpg',
+    './assets/ellie-eight-2022.jpg',
+]
+
+yearArr.forEach((photo) => {
+    const newPhoto = document.createElement('img')
+    newPhoto.setAttribute('src', photo)
+
+})
