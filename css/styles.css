@@ -22,6 +22,7 @@ body{
     background-color: #a59bfd;
     animation-name: main;
     animation-duration: 8s;
+    animation-iteration-count: infinite;
     height: 100vh;
 }
 .message{
