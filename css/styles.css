@@ -5,6 +5,7 @@
 :root {
     font-size: 10px;
     background-color: #a59bfd;
+    height: 100vh
 }
 @keyframes main {
     50% {background-color: #b58ad8;}
@@ -35,17 +36,50 @@ body{
     font-family: 'Gluten', cursive;
     
 }
-.year-img{
-    width: 300px;
-    height: 250px;
-    box-shadow: 3px 3px 20px 10px #ff44a8;
+.years{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.birth {
+    margin: 2rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 
-.footer{
+.year-img{
+    width: 400px;
+    height: 400px;
+    box-shadow: 3px 3px 20px 10px #ff44a8;
+}
+.description {
+    margin: 2rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.btn-container{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+
+}
+.btn-container > button {
+    padding: 5px;
+    background-color: #ffb7d7;
+    font-size: 2rem;
+    color: #7c3bb0;
+    border: 1px solid #7c3bb0;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .footer{
     height: 5rem;
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: #ff44a8;
     background-image: linear-gradient(#ffb7d7, #ff44a8);
-}
+} */
