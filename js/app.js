@@ -62,21 +62,20 @@ const typer = (text) => {
 let count = 0
 typer('Happy Birthday Ellie!')
 const handleNext = (e) => {
+    if (count === yearArr.length - 1) count = -1
     count += 1
     e.preventDefault()
     yearImg.setAttribute('src', yearArr[count].img)
     yearImg.setAttribute('alt', yearArr[count].year)
     description.innerHTML = yearArr[count].year
-    if (count === yearArr.length - 1) count = -1
-
 }
 const handlePrev = (e) => {
+    if (count === 0) count = 10
     count -= 1
     e.preventDefault()
     yearImg.setAttribute('src', yearArr[count].img)
     yearImg.setAttribute('alt', yearArr[count].year)
     description.innerHTML = yearArr[count].year
-    if (count === 0) count = 10
 }
 
 //event listeners
