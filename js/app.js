@@ -5,6 +5,10 @@ const yearImg = document.querySelector('.year-img')
 const description = document.querySelector('.description')
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
+const funNext = document.querySelector('.fun-next')
+const funPrev = document.querySelector('.fun-prev')
+const funImg = document.querySelector('.fun-img')
+
 const yearArr = [
     {
         img: './assets/ellie-four-weeks.jpg',
@@ -48,11 +52,37 @@ const yearArr = [
     },
 ]
 const photoArr = [
-    './assets/family/ash-katie-kids.jpg',
-    
+    {img: './assets/family/silly-ellie.jpg'},
+    {img: './assets/family/snake.jpg'},
+    {img: './assets/family/reunion.jpg'},
+    {img: './assets/family/restaurant.jpg'},
+    {img: './assets/family/restaurant_2.jpg'},
+    {img: './assets/family/patio-time.jpg'},
+    {img: './assets/family/matching-baba.jpg'},
+    {img: '/assets/family/leoandgrandma.jpg'},
+    {img: './assets/family/leo.jpg'},
+    {img: './assets/family/katie-ellie.jpg'},
+    { img: './assets/family/katie-bday.jpg' },
+    { img: './assets/family/hux_2.jpg' },
+    { img: './assets/family/great-grandpa.jpg' },
+    { img: './assets/family/grandparents-house.jpg' },
+    { img: './assets/family/fishing.jpg' },
+    { img: './assets/family/fireworks.jpg' },
+    { img: './assets/family/fam_2.jpg' },
+    { img: './assets/family/fam_1.jpg' },
+    { img: './assets/family/doggies.jpg' },
+    { img: './assets/family/dino.jpg' },
+    { img: './assets/family/cruise-family.jpg' },
+    { img: './assets/family/climbing.jpg' },
+    { img: './assets/family/christmas.jpg' },
+    { img: './assets/family/bella-love.jpg' },
+    { img: './assets/family/bella_2.jpg' },
+    { img: './assets/family/bella_1.jpg' },
+    { img: './assets/family/baba.jpg' },
+    { img: './assets/family/baba-beach.jpg' },
+    {img: './assets/family/ash-katie-kids.jpg'}
 ]
-
-console.log(yearArr.length)
+console.log(photoArr.length)
 const appendLetter = (letter) => {
     message.append(letter)
 }
@@ -75,14 +105,29 @@ const handleNext = (e) => {
     description.innerHTML = yearArr[count].year
 }
 const handlePrev = (e) => {
-    if (count === 0) count = 10
+    if (count === 0) count = yearArr.length
     count -= 1
     e.preventDefault()
     yearImg.setAttribute('src', yearArr[count].img)
     yearImg.setAttribute('alt', yearArr[count].year)
     description.innerHTML = yearArr[count].year
 }
+let funCount = 0
+const handleFunNext = (e) => {
+    if (funCount === photoArr.length - 1) funCount = -1
+    funCount += 1
+    e.preventDefault()
+    funImg.setAttribute('src', photoArr[funCount].img)
+}
+const handleFunPrev = (e) => {
+    if (funCount === 0) funCount = photoArr.length
+    funCount -= 1
+    e.preventDefault()
+    funImg.setAttribute('src', photoArr[funCount].img)
+}
 
 //event listeners
 prev.addEventListener('click', handlePrev)
 next.addEventListener('click', handleNext)
+funPrev.addEventListener('click', handleFunPrev)
+funNext.addEventListener('click', handleFunNext)
