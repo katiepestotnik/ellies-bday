@@ -47,6 +47,11 @@ const yearArr = [
         year: 'Ellie at eight years'
     },
 ]
+const photoArr = [
+    './assets/family/ash-katie-kids.jpg',
+    
+]
+
 console.log(yearArr.length)
 const appendLetter = (letter) => {
     message.append(letter)
