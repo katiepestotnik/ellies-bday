@@ -94,6 +94,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .prev-div, .next-div{
     height: 100%;
@@ -106,10 +107,11 @@ body{
 
 .fun-div{
     height: 100%;
-    width: 33%;
+    width: 70%;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .fun{
@@ -122,6 +124,7 @@ body{
     height: 450px;
     display: inline-block;
     margin: 20px auto;
+    box-shadow: 3px 3px 20px 10px #ff44a8;
 }
 
 
