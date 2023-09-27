@@ -81,30 +81,19 @@ body{
     text-align: center;
 }
 
-.next, .prev, .fun-next, .fun-prev {
-    height: 250px;
-    width: 250px;
-    
-}
 .fun-container{
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
 
-.prev-div{
-    display: flex;
-    justify-content: flex-end;
-}
-
 .fun-div{
     height: 100%;
-    width: 50%;
+    width: 70%;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
 }
 
 .fun, .birth, .description, .year-img{
