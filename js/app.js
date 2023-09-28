@@ -81,7 +81,9 @@ const photoArr = [
     { img: './assets/family/baba.jpg' },
     { img: './assets/family/baba-beach.jpg' },
     { img: './assets/family/ash-katie-kids.jpg' },
-    { img: './assets/family/silly-hux.jpeg'}
+    { img: './assets/family/silly-hux.jpeg' },
+    { img: './assets/family/cute-hux.jpeg' },
+    
 ]
 console.log(photoArr.length)
 const appendLetter = (letter) => {
