@@ -50,6 +50,10 @@ const yearArr = [
         img: './assets/ellie-eight-2022.jpg',
         year: 'Ellie at eight years'
     },
+    {
+        img: './assets/ellie-nine-2023.jpg',
+        year: 'Ellie at nine years'
+    }
 ]
 const photoArr = [
     {img: './assets/family/silly-ellie.jpg'},
